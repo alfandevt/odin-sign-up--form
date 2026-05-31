@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Norse";
+  src: url(assets/fonts/norse/Norse.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url(assets/fonts/norse/Norsebold.otf);
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+#root {
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.left {
+  flex-basis: 40vw;
+}
+
+.right {
+  flex-basis: 60vw;
+}
+
+.background {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: inherit;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  background-color: rgba(8, 8, 8, 0.556);
+  width: 100%;
+  padding: 10px;
+}
+
+.logo img {
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo p {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Norse", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.credit {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 20px;
+}
+
+.credit a {
+  color: inherit;
+}
