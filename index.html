@@ -7,7 +7,7 @@
     <title>Odin Sign Up Form</title>
   </head>
   <body>
-    <div id="root">
+    <main id="root">
       <div class="left">
         <img
           src="/assets/backgrounds/jeremy-hynes-2VsPnDt2SQs-unsplash.jpg"
@@ -30,7 +30,56 @@
           >
         </p>
       </div>
-      <div class="right"></div>
-    </div>
+      <div class="right">
+        <p>
+          This is not a real online services! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <br />Sign up <em>now</em> to get started!
+        </p>
+        <p>You <em>know</em> You want to.</p>
+        <div class="forms">
+          <form action="POST" class="controls">
+            <div class="card">
+              <h2>Let's do this!</h2>
+              <div class="grid-form">
+                <div class="field-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" required />
+                </div>
+                <div class="field-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" required />
+                </div>
+                <div class="field-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="field-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" required />
+                </div>
+                <div class="field-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" required minlength="8" />
+                </div>
+                <div class="field-group">
+                  <label for="password-confirm">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="password-confirm"
+                    required
+                    minlength="8"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-action">
+              <button type="button">Create Account</button>
+              <p>Already have an acount? <a href="#">Log In</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
